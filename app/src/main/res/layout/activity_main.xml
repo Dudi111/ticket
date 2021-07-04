@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#551947"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvfly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#551947"
+        android:text="Fly to Seoul"
+        android:layout_marginLeft="45dp"
+        android:paddingTop="20dp"
+        android:paddingLeft="30dp"
+        android:textColor="@color/white"
+        android:textSize="25sp" />
+    <TextView
+        android:id="@+id/tvarrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_vector"
+        android:padding="30dp"
+        android:drawableLeft="@drawable/ic_vector" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#551947"
+        android:layout_below="@+id/tvfly"
+        android:layout_marginTop="25dp"
+        android:padding="30sp"
+        android:layout_marginLeft="40dp"
+        android:text="1Adult, Economy "
+        android:textColor="@color/white"
+        android:textSize="25sp" />
+    <TextView
+        android:id="@+id/tvdot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_carbon_user_filled"
+        android:layout_below="@id/tvarrow"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:drawablePadding="40dp"
+        android:layout_marginLeft="30dp"
+        android:drawableLeft="@drawable/ic_carbon_user_filled" />
+    <TextView
+        android:id="@+id/tvline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableBottom="@drawable/ic_line_1__1_"
+        android:layout_below="@+id/tvdot"
+        android:layout_marginLeft="30dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#551947"
+        android:layout_below="@+id/tvfly"
+        android:layout_marginTop="100dp"
+        android:padding="30sp"
+        android:layout_marginLeft="40dp"
+        android:text="Seoul, Korea"
+        android:textColor="@color/white"
+        android:textSize="25sp" />
+    <TextView
+        android:id="@+id/seoul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableBottom="@drawable/ic_vector__4_"
+        android:layout_below="@+id/tvline1"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:id="@+id/tvline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableBottom="@drawable/ic_line_1__1_"
+        android:layout_below="@+id/seoul"
+        android:layout_marginLeft="30dp"/>
+    <TextView
+        android:id="@+id/tvdest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose Destination"
+        android:layout_below="@+id/tvline2"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:drawableLeft="@drawable/ic_vector__8_"
+        android:drawableBottom="@drawable/ic_line_1__1_"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="25dp"
+        android:textSize="25dp"/>
+    <TextView
+        android:id="@+id/tvdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Dates"
+        android:layout_below="@+id/tvdest"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:drawableLeft="@drawable/ic_vector__9_"
+        android:drawableBottom="@drawable/ic_line_1__1_"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="25dp"
+        android:textSize="25dp"/>
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvdate"
+        android:layout_marginTop="70dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Explore flights by destination"
+            android:layout_marginLeft="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linear"
+            android:layout_marginLeft="30dp"
+            android:text="       Khumbu vally, Nepal"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_marginTop="30dp"
+            android:drawableLeft="@drawable/khumbu_valley1"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableBottom="@drawable/ic_line_1__1_"
+            android:drawableTint="@color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linear"
+            android:layout_marginLeft="30dp"
+            android:text="       Maldives, South Asia"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="50dp"
+            android:drawableLeft="@drawable/maldives2"
+            />
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>
